@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   count: number = 0;
+  incrementInterval: any;
+  decrementInterval: any;
 
   increment() {
     this.count++;
@@ -26,5 +28,24 @@ export class CounterComponent {
 
   isBelowMinusThree(): boolean {
     return this.count < -3;
+  }
+  
+  onIncrementMouseDown() {
+    this.increment();
+    this.incrementInterval = setInterval(() => {
+      this.increment();
+    }, 100);
+  }
+
+  onDecrementMouseDown() {
+    this.decrement();
+    this.decrementInterval = setInterval(() => {
+      this.decrement();
+    }, 100);
+  }
+
+  onMouseUp() {
+    clearInterval(this.incrementInterval);
+    clearInterval(this.decrementInterval);
   }
 }

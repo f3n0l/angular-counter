@@ -3,10 +3,10 @@
   <span class="count">{{ count }}</span>
   <div class="flex">
     <div class="button-flex">
-      <button class="red" (click)="decrement()">-</button>
-      <button class="green" (click)="increment()">+</button>
+      <!-- Use mousedown and mouseup events -->
+      <button class="red" (mousedown)="onDecrementMouseDown()" (mouseup)="onMouseUp()">-</button>
+      <button class="green" (mousedown)="onIncrementMouseDown()" (mouseup)="onMouseUp()">+</button>
     </div>
     <button class="reset" (click)="reset()">Reset</button>
   </div>
-
 </div>
