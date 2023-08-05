@@ -1,4 +1,5 @@
-<div class="counter" [ngClass]="{ 'above-three': isAboveThree(), 'below-minus-three': isBelowMinusThree() }">
+<div class="counter"
+  [ngClass]="{ 'above-three': isAboveThree(), 'below-minus-three': isBelowMinusThree(), 'above-twenty': isAboveTwenty(), 'below-minus-twenty': isBelowMinusTwenty() }">
   <h2>Counter</h2>
   <span class="count">{{ count }}</span>
   <div class="flex">

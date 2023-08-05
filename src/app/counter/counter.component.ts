@@ -29,7 +29,15 @@ export class CounterComponent {
   isBelowMinusThree(): boolean {
     return this.count < -3;
   }
-  
+
+  isAboveTwenty(): boolean{
+    return this.count > 20;
+  }
+
+ isBelowMinusTwenty(): boolean{
+    return this.count < -20;
+  }
+
   onIncrementMouseDown() {
     this.increment();
     this.incrementInterval = setInterval(() => {
