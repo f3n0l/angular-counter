@@ -1,0 +1,12 @@
+<div class="counter" [ngClass]="{ 'above-three': isAboveThree(), 'below-minus-three': isBelowMinusThree() }">
+  <h2>Counter</h2>
+  <span class="count">{{ count }}</span>
+  <div class="flex">
+    <div class="button-flex">
+      <button class="red" (click)="decrement()">-</button>
+      <button class="green" (click)="increment()">+</button>
+    </div>
+    <button class="reset" (click)="reset()">Reset</button>
+  </div>
+
+</div>

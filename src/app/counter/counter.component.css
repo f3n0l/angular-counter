@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.count {
+    font-size: 60px;
+}
+
+.counter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+}
+
+.button-flex {
+    display: flex;
+}
+
+.red {
+    background-color: rebeccapurple;
+    color: white
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.reset {
+    width: 80px;
+    background-color: red;
+    color: white
+}
+
+
+
+.above-three {
+    color: blue;
+}
+
+.below-minus-three {
+    color: red;
+}
